@@ -38,52 +38,63 @@
 
     <form method="post" action="#">
         <p><strong>Información personal</strong></p>
-        Nombre:
+        <label for="name">Nombre:</label>
         <br>
-        <input required="true" type="text">
-        <br>Correo Electrónico:
+        <input id="name" required="true" type="text">
         <br>
-        <input required="true" type="email">
-        <br>Página personal:
+        <label for="email">Correo Electrónico:</label>
         <br>
-        <input placeholder="URL de tu página web personal" type="url">
+        <input id="email" required="true" type="email">
+        <br>
+        <label for="url">Página personal:</label>
+        <br>
+        <input id="url" placeholder="URL de tu página web personal" type="url">
         <br>
 
         <p><strong>Otra información</strong></p>
-        Fecha:
+        <label for="fecha">Fecha:</label>
         <br>
-        <input type="date">
-        <br>Mes:
+        <input id="fecha" type="date">
         <br>
-        <input type="month">
-        <br>Semana:
+        <label for="mes">Mes:</label>
         <br>
-        <input type="week">
-        <br>Tiempo:
+        <input id="mes" type="month">
         <br>
-        <input type="time">
-        <br>Fecha y tiempo:
+        <label for="semana">Semana:</label>
         <br>
-        <input type="time">
-        <br>Número (min -10, max 10):
+        <input id="semana" type="week">
         <br>
-        <input min="-10" max="10" value="0" type="number">
-        <br>Intervalo (min 0, max 10):
+        <label for="tiempo">Tiempo:</label>
         <br>
-        <input value="50" type="range">
-        <br>Teléfono:
+        <input id="tiempo" type="time">
         <br>
-        <input type="tel">
-        <br>Búsqueda:
+        <label for="fechor">Fecha y tiempo:</label>
         <br>
-        <input type="search">
-        <br>Color Favorito:
+        <input id="fechor" type="time">
         <br>
-        <input value="#000000" type="color">
+        <label for="numero">Número (min -10, max 10):</label>
+        <br>
+        <input id="numero" min="-10" max="10" value="0" type="number">
+        <br>
+        <label for="intervalo">Intervalo (min 0, max 10):</label>
+        <br>
+        <input id="intervalo" value="50" type="range">
+        <br>
+        <label for="telf">Teléfono:</label>
+        <br>
+        <input id="telf" type="tel">
+        <br>
+        <label for="busq">Búsqueda:</label>
+        <br>
+        <input id="busq" type="search">
+        <br>
+        <label for="color">Color Favorito:</label>
+        <br>
+        <input id="color" value="#000000" type="color">
 
         <p><strong>Controles</strong></p>
-        <input value="Borrar" type="reset">
-        <input value="Enviar" type="submit">
+        <input value="Borrar" type="reset" aria-label="Limpiar el formulario">
+        <input value="Enviar" type="submit" aria-label="Enviar el formulario">
     </form>
 
     <hr>
@@ -115,15 +126,15 @@
 
     <h2>Mapas de imágenes - Ejemplo mal</h2>
 
-    <img src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png" usemap="#map1" height="480" width="948" border="0">
+    <img src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png" usemap="#map1" height="480" width="948" border="0" alt="Imagen de Presentación Hackathon Lovers">
 
     <map name="map1">
-        <area shape="rect" coords="18,25,221,63" href="index.html" alt="Inicio">
-        <area shape="rect" coords="337,40,396,64" href="unete.html" alt="Unete">
-        <area shape="rect" coords="424,40,491,65" href="equipo.html" alt="Equipo">
-        <area shape="rect" coords="520,41,612,64" href="contacto.html" alt="Contacto">
-        <area shape="rect" coords="641,40,728,65" href="siguenos.html" alt="Siguenos">
-        <area shape="rect" coords="16,344,400,397" href="/meetup.html" alt="Meetup">
+        <area shape="rect" coords="18,25,221,63" href="index.html" alt="">
+        <area shape="rect" coords="337,40,396,64" href="unete.html" alt="">
+        <area shape="rect" coords="424,40,491,65" href="equipo.html" alt="">
+        <area shape="rect" coords="520,41,612,64" href="contacto.html" alt="">
+        <area shape="rect" coords="641,40,728,65" href="siguenos.html" alt="">
+        <area shape="rect" coords="16,344,400,397" href="/meetup.html" alt="">
     </map>
 
     <hr>
@@ -144,21 +155,21 @@
 
     <h2>Organización - Ejemplo mal</h2>
 
-    <big><b>Nombre de la empresa</b></big>
+    <big><strong>Nombre de la empresa</strong></big>
     <p>Eslogan de la empresa</p>
 
     <table>
         <tbody><tr>
-            <td><b>Noticias</b></td>
+            <td><strong>Noticias</strong></td>
         </tr>
         <tr>
-            <td><small><b>Noticia 1</b></small></td>
+            <td><small><strong>Noticia 1</strong></small></td>
         </tr>
         <tr>
             <td><small>Desarrollo de la noticia 1</small></td>
         </tr>
         <tr>
-            <td><small><b>Noticia 2</b></small></td>
+            <td><small><strong>Noticia 2</strong></small></td>
         </tr>
         <tr>
             <td><small>Desarrollo de la noticia 2</small></td>
