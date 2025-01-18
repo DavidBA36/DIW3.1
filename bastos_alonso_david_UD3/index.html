@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Accesibilidad Ejemplos mal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Accesibilidad%20Ejemplos%20mal_files/estilos.css">
+</head>
+
+<body>
+
+    <h1>Accesibilidad Ejemplos mal</h1>
+
+    <h2>Elementos repetitivos - Ejemplo mal</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#">menu 1</a>
+                <ul>
+                    <li><a href="#" >submenu 1.1</a></li>
+                    <li><a href="#">submenu 1.2</a></li>
+                    <li><a href="#">submenu 1.3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu 2</a>
+                <ul>
+                    <li><a href="#">submenu 2.1</a></li>
+                    <li><a href="#">submenu 2.2</a></li>
+                    <li><a href="#">submenu 2.3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h2>Formularios - Ejemplo mal</h2>
+
+    <form method="post" action="#">
+        <p><strong>Información personal</strong></p>
+        <label for="name">Nombre:</label>
+        <br>
+        <input id="name" required="true" type="text">
+        <br>
+        <label for="email">Correo Electrónico:</label>
+        <br>
+        <input id="email" required="true" type="email">
+        <br>
+        <label for="url">Página personal:</label>
+        <br>
+        <input id="url" placeholder="URL de tu página web personal" type="url">
+        <br>
+
+        <p><strong>Otra información</strong></p>
+        <label for="fecha">Fecha:</label>
+        <br>
+        <input id="fecha" type="date">
+        <br>
+        <label for="mes">Mes:</label>
+        <br>
+        <input id="mes" type="month">
+        <br>
+        <label for="semana">Semana:</label>
+        <br>
+        <input id="semana" type="week">
+        <br>
+        <label for="tiempo">Tiempo:</label>
+        <br>
+        <input id="tiempo" type="time">
+        <br>
+        <label for="fechor">Fecha y tiempo:</label>
+        <br>
+        <input id="fechor" type="time">
+        <br>
+        <label for="numero">Número (min -10, max 10):</label>
+        <br>
+        <input id="numero" min="-10" max="10" value="0" type="number">
+        <br>
+        <label for="intervalo">Intervalo (min 0, max 10):</label>
+        <br>
+        <input id="intervalo" value="50" type="range">
+        <br>
+        <label for="telf">Teléfono:</label>
+        <br>
+        <input id="telf" type="tel">
+        <br>
+        <label for="busq">Búsqueda:</label>
+        <br>
+        <input id="busq" type="search">
+        <br>
+        <label for="color">Color Favorito:</label>
+        <br>
+        <input id="color" value="#000000" type="color">
+
+        <p><strong>Controles</strong></p>
+        <button type="reset" aria-label="Limpiar el formulario">Borrar</button> 
+        <button type="submit" aria-label="Enviar el formulario">Enviar</button>
+    </form>
+
+    <hr>
+
+    <h2>Imágenes - Ejemplo mal</h2>
+
+    <p>
+        <a href="anterior.html"><img src="Accesibilidad%20Ejemplos%20mal_files/flecha-izq.gif" alt="Flecha roja que apunta a la izquierda" aria-label="Abrir enlace en una nueva ventana"></a>
+        <a href="indice.html">Índice</a>
+        <a href="siguiente.html"><img src="Accesibilidad%20Ejemplos%20mal_files/flecha-der.gif" alt="Flecha roja que apunta a la derecha" aria-label="Abrir enlace en una nueva ventana"></a>
+    </p>
+
+    <p>
+        Menu:
+        <br>
+        <br>
+        <a href="unete.html"><img src="logo.png" alt="Únete" aria-label="Abrir enlace en una nueva ventana">Únete</a>
+        <br>
+        <a href="equipo.html"><img src="logo.png" alt="Equipo" aria-label="Abrir enlace en una nueva ventana">Equipo</a>
+        <br>
+        <a href="contacto.html"><img src="Alogo.png" alt="Contacto" aria-label="Abrir enlace en una nueva ventana">Contacto</a>
+        <br>
+        <a href="siguenos.html"><img src="logo.png" alt="Síguenos" aria-label="Abrir enlace en una nueva ventana">Síguenos</a>
+    </p>
+
+    <p>Teléfono de contacto:<img src="Atelefono.gif" alt="Teléfono de contacto"></p>
+
+    <hr>
+
+    <h2>Mapas de imágenes - Ejemplo mal</h2>
+
+    <img src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png" usemap="#map1" height="480" width="948" border="0" alt="Imagen de Presentación Hackathon Lovers">
+
+    <map name="map1">
+        <area shape="rect" coords="18,25,221,63" href="index.html" alt="Inicio">
+        <area shape="rect" coords="337,40,396,64" href="unete.html" alt="Unete">
+        <area shape="rect" coords="424,40,491,65" href="equipo.html" alt="Equipo">
+        <area shape="rect" coords="520,41,612,64" href="contacto.html" alt="Contacto">
+        <area shape="rect" coords="641,40,728,65" href="siguenos.html" alt="Siguenos">
+        <area shape="rect" coords="16,344,400,397" href="/meetup.html" alt="Meetup">
+    </map>
+
+    <hr>
+
+    <h2>Enlace - Ejemplo mal</h2>
+
+    <h3>A mi hija mayor se le ha caido su primer diente</h3>
+
+    <p>Estabamos desayunando cuando de repente sucedió.
+        <a href="noticia-hija-mayor.html">Más información.</a></p>
+
+    <h3>A mi hija pequeña le ha salido su primera muela</h3>
+
+    <p>Después de comer, la pequeña dijo que le molestaba la boca.
+        <a href="noticia-hija-mayor.html">Más información.</a></p>
+
+    <hr>
+
+    <h2>Organización - Ejemplo mal</h2>
+
+    <big><strong>Nombre de la empresa</strong></big>
+    <p>Eslogan de la empresa</p>
+
+    <table>
+        <tbody><tr>
+            <td><strong>Noticias</strong></td>
+        </tr>
+        <tr>
+            <td><small><strong>Noticia 1</strong></small></td>
+        </tr>
+        <tr>
+            <td><small>Desarrollo de la noticia 1</small></td>
+        </tr>
+        <tr>
+            <td><small><strong>Noticia 2</strong></small></td>
+        </tr>
+        <tr>
+            <td><small>Desarrollo de la noticia 2</small></td>
+        </tr>
+    </tbody></table>
+
+    <hr>
+
+    <h2>Diagramas - Ejemplo mal</h2>
+
+    <img src="Accesibilidad%20Ejemplos%20mal_files/disenio-centrado-usuario.png" alt="Diagrama de Diseño Centrado en el Usuario">
+
+    <hr>
+
+    <h2>Tablas - Ejemplo mal</h2>
+
+    <table border="1">
+        <caption>En esta tabla puede verse el horario de la clase 3ºA</caption> 
+        <thead> 
+            <tr> 
+                <th scope="col"></th> 
+                <th scope="col"><strong>Lunes</strong></th> 
+                <th scope="col"><strong>Martes</strong></th> 
+                <th scope="col"><strong>Miércoles</strong></th> 
+                <th scope="col"><strong>Jueves</strong></th> 
+                <th scope="col"><strong>Viernes</strong></th>
+             </tr>
+        </thead>
+        <tbody> 
+            <tr> 
+                <th scope="row"><strong>10:00</strong></th> 
+                <td>Matemáticas</td> 
+                <td>Matemáticas</td> 
+                <td>Matemáticas</td> 
+                <td>Matemáticas</td> 
+                <td>Matemáticas</td> 
+            </tr> 
+            <tr> 
+                <th scope="row"><strong>11:00</strong></th> 
+                <td>Lengua</td> 
+                <td>Lengua</td> 
+                <td>Lengua</td> 
+                <td>Lengua</td> 
+                <td>Lengua</td> 
+            </tr> 
+            <tr> 
+                <th scope="row"><strong>12:00</strong></th> 
+                <td>C. Sociales</td> 
+                <td>C. Naturales</td> 
+                <td>C. Sociales</td> 
+                <td>C. Naturales</td> 
+                <td>Deporte</td> 
+            </tr> 
+            <tr> 
+                <th scope="row"><strong>13:00</strong></th>
+                <td>Inglés</td> 
+                <td>Inglés</td>
+                <td>Inglés</td> 
+                <td>Inglés</td> 
+            </tr> 
+    </tbody></table>
+
+    <hr>
+
+    <h2>Contraste - Ejemplo Mal</h2>
+
+    <div class="importante">Este texto es importante</div>
+
+    <hr>
+
+    
+
+</body></html>
