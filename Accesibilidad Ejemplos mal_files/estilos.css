@@ -50,3 +50,35 @@ section.tabpanel {
 section.tabpanel:focus {
     background: #eee;
 }
+
+body{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+
+hr {
+    border: 1px solid gray;   
+}
+
+.bordes{
+    border: 2px solid black;
+    padding: 10px;
+    width: 33%;
+} 
+
+.imagenes{
+    width: 33vw;
+
+}
+
+.vertical{
+   margin: 10px; 
+}
+
+h2{
+    font-size: 2em;
+}
+
+
