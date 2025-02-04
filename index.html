@@ -43,7 +43,7 @@
       <h2>Formularios - Ejemplo mal</h2>
 
       <form method="post" action="#">
-        <p><strong>Información personal</strong></p>
+        <h3>Información personal</h3>
         <label for="name">Nombre:</label>
         <br />
         <input id="name" required="true" type="text" />
@@ -61,7 +61,7 @@
         />
         <br />
 
-        <p><strong>Otra información</strong></p>
+        <h3>Otra información</h3>
         <label for="fecha">Fecha:</label>
         <br />
         <input id="fecha" type="date" />
@@ -283,17 +283,17 @@
         </caption>
         <thead>
           <tr>
-            <th id="hora"><strong></strong></th>
-            <th id="lunes"><strong>Lunes</strong></th>
-            <th id="martes"><strong>Martes</strong></th>
-            <th id="miercoles"><strong>Miércoles</strong></th>
-            <th id="jueves"><strong>Jueves</strong></th>
-            <th id="viernes"><strong>Viernes</strong></th>
+            <th id="hora" scope="col"><strong>Hora</strong></th>
+            <th id="lunes" scope="col"><strong>Lunes</strong></th>
+            <th id="martes" scope="col"><strong>Martes</strong></th>
+            <th id="miercoles" scope="col"><strong>Miércoles</strong></th>
+            <th id="jueves" scope="col"><strong>Jueves</strong></th>
+            <th id="viernes" scope="col"><strong>Viernes</strong></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th headers="hora"><strong>10:00</strong></th>
+            <td headers="hora" scope="row"><strong>10:00</strong></td>
             <td headers="lunes">Matemáticas</td>
             <td headers="martes">Matemáticas</td>
             <td headers="miercoles">Matemáticas</td>
@@ -301,7 +301,7 @@
             <td headers="viernes">Matemáticas</td>
           </tr>
           <tr>
-            <th headers="hora"><strong>11:00</strong></th>
+            <td headers="hora" scope="row"><strong>11:00</strong></td>
             <td headers="lunes">Lengua</td>
             <td headers="martes">Lengua</td>
             <td headers="miercoles">Lengua</td>
@@ -309,7 +309,7 @@
             <td headers="viernes">Lengua</td>
           </tr>
           <tr>
-            <th headers="hora"><strong>12:00</strong></th>
+            <td headers="hora" scope="row"><strong>12:00</strong></td>
             <td headers="lunes">C. Sociales</td>
             <td headers="martes">C. Naturales</td>
             <td headers="miercoles">C. Sociales</td>
@@ -317,12 +317,12 @@
             <td headers="viernes">Deporte</td>
           </tr>
           <tr>
-            <th headers="hora"><strong>13:00</strong></th>
+            <td headers="hora" scope="row"><strong>13:00</strong></td>
             <td headers="lunes">Inglés</td>
             <td headers="martes">Inglés</td>
             <td headers="miercoles">Inglés</td>
             <td headers="jueves">Inglés</td>
-            <td headers="viernes">Músic</td>
+            <td headers="viernes">Música</td>
           </tr>
         </tbody>
       </table>
