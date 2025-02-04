@@ -44,18 +44,19 @@
 
       <form method="post" action="#">
         <h3>Información personal</h3>
-        <label for="name">Nombre:</label>
+        <label for="nombre">Nombre:</label>
         <br />
-        <input id="name" required="true" type="text" />
+        <input id="nombre" name="nombre" required="true" type="text" />
         <br />
         <label for="email">Correo Electrónico:</label>
         <br />
-        <input id="email" required="true" type="email" />
+        <input id="email" name="email" required="true" type="email" />
         <br />
-        <label for="url">Página personal:</label>
+        <label for="pagina">Página personal:</label>
         <br />
         <input
-          id="url"
+          id="pagina"
+          name="pagina"
           placeholder="URL de tu página web personal"
           type="url"
         />
@@ -84,7 +85,14 @@
         <br />
         <label for="numero">Número (min -10, max 10):</label>
         <br />
-        <input id="numero" name="numero" min="-10" max="10" value="0" type="number" />
+        <input
+          id="numero"
+          name="numero"
+          min="-10"
+          max="10"
+          value="0"
+          type="number"
+        />
         <br />
         <label for="intervalo">Intervalo (min 0, max 10):</label>
         <br />
@@ -94,9 +102,9 @@
         <br />
         <input id="telf" name="telf" type="tel" />
         <br />
-        <label for="busq">Búsqueda:</label>
+        <label for="busqueda">Búsqueda:</label>
         <br />
-        <input id="busq" name="busq" type="search" />
+        <input id="busqueda" name="busqueda" type="search" />
         <br />
         <label for="color">Color Favorito:</label>
         <br />
