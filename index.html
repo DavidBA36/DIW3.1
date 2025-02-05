@@ -1,325 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
-    <title>Accesibilidad Ejemplos mal</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="Accesibilidad%20Ejemplos%20mal_files/estilos.css"
-    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>El Plato azul</title>
   </head>
-
   <body>
-    <section class="bordes">
-      <h1>Accesibilidad Ejemplos mal</h1>
-
-      <h2>Elementos repetitivos - Ejemplo mal</h2>
-
-      <nav>
-        <ul>
-          <li>
-            <a target="_self" href="#">menu 1</a>
-            <ul>
-              <li><a target="_self" href="#">submenu 1.1</a></li>
-              <li><a target="_self" href="#">submenu 1.2</a></li>
-              <li><a target="_self" href="#">submenu 1.3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a target="_self" href="#">menu 2</a>
-            <ul>
-              <li><a target="_self" href="#">submenu 2.1</a></li>
-              <li><a target="_self" href="#">submenu 2.2</a></li>
-              <li><a target="_self" href="#">submenu 2.3</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
-      <hr />
-
-      <h2>Formularios - Ejemplo mal</h2>
-
-      <form method="post" action="#">
-        <h3>Información personal</h3>
-        <label for="nombre">Nombre:</label>
-        <input id="nombre" name="nombre" required="true" type="text" />
-        <br />
-        <label for="email">Correo Electrónico:</label>
-        <input id="email" name="email" required="true" type="email" />
-        <br />
-        <label for="pagina">Página personal:</label>
-        <input
-          id="pagina"
-          name="pagina"
-          placeholder="URL de tu página web personal"
-          type="url"
-        />
-        <br />
-
-        <h3>Otra información</h3>
-        <label for="fecha">Fecha:</label>
-        <input id="fecha" name="fecha" type="date" />
-        <br />
-        <label for="mes">Mes:</label>
-        <input id="mes" name="mes" type="month" />
-        <br />
-        <label for="semana">Semana:</label>
-        <input id="semana" name="semana" type="week" />
-        <br />
-        <label for="tiempo">Tiempo:</label>
-        <input id="tiempo" name="tiempo" type="time" />
-        <br />
-        <label for="fechor">Fecha y tiempo:</label>
-        <input id="fechor" name="fechor" type="time" />
-        <br />
-        <label for="numero">Número (min -10, max 10):</label>
-        <input
-          id="numero"
-          name="numero"
-          min="-10"
-          max="10"
-          value="0"
-          type="number"
-        />
-        <br />
-        <label for="intervalo">Intervalo (min 0, max 10):</label>
-        <input id="intervalo" name="intervalo" value="50" type="range" />
-        <br />
-        <label for="telf">Teléfono:</label>
-        <input id="telf" name="telf" type="tel" />
-        <br />
-        <label for="busqueda">Búsqueda:</label>
-        <input id="busqueda" name="busqueda" type="search" />
-        <br />
-        <label for="color">Color Favorito:</label>
-        <input id="color" name="color" value="#000000" type="color" />
-
-        <h3>Controles</h3>
-        <div>
-          <button type="reset" aria-label="Limpiar el formulario">
-            Borrar
-          </button>
-          <button type="submit" aria-label="Enviar el formulario">
-            Enviar
-          </button>
+    <div class="titulo">
+      <span>El Plato azul</span>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="index.html">INICIO</a>
+    </div>
+    <main class="principal">    
+        <section class="inicio">
+        <h1>Bienvenido a El plato Azul</h1>
+        <p>
+          La diabetes es una enfermedad crónica que afecta la forma en que el
+          cuerpo convierte los alimentos en energía.
+        </p>
+        <p>Diabetes Tipo 1</p>
+        <p>
+          La diabetes tipo 1 es una enfermedad autoinmunitaria en la que el
+          sistema inmunitario ataca y destruye las células del páncreas que
+          producen insulina. Las personas con diabetes tipo 1 necesitan insulina
+          diaria para sobrevivir2 .
+        </p>
+        <p>Diabetes Tipo 2</p>
+        <p>
+          La diabetes tipo 2 ocurre cuando el cuerpo no produce suficiente
+          insulina o no la utiliza adecuadamente. Es más común en adultos, pero
+          también puede afectar a niños y adolescentes. Se puede controlar con
+          dieta, ejercicio, pérdida de peso y, en algunos casos, medicamentos
+        </p>
+        <p>Factores de Riesgo</p>
+        <p>
+          Los factores de riesgo para la diabetes tipo 2 incluyen tener más de
+          45 años, antecedentes familiares de diabetes, sobrepeso, inactividad
+          física y ciertos problemas de salud. Las mujeres con antecedentes de
+          diabetes gestacional también tienen un mayor riesgo
+        </p>
+        <p>
+          Esta es una web de interes general donde, si eres una persona con
+          diabetes podrás encontrar consejos para mejorar tu situacion
+          nutricional y controlar mejor tu diabetes
+        </p>
+        <p>
+          Si no eres una persona con diabetes podrás encontrar ideas para evitar
+          malos habitos que reduzcan los riesgos que llevan a la diabetes
+        </p>
+      </section>
+      <footer>
+        <div class="footer-section">
+          <h4>Sobre Nosotros</h4>
+          <p>
+            Somos una empresa dedicada a ofrecer las mejores recetas y consejos
+            culinarios para personas con diabetes y público general.
+          </p>
         </div>
-      </form>
-
-      <hr />
-
-      <h2>Imágenes - Ejemplo mal</h2>
-
-      <p>
-        <a target="_self" href="anterior.html"
-          ><img
-            src="Accesibilidad%20Ejemplos%20mal_files/flecha-izq.gif"
-            alt="Flecha roja que apunta a la izquierda"
-        /></a>
-        <a target="_self" href="indice.html">Índice</a>
-        <a target="_self" href="siguiente.html"
-          ><img
-            src="Accesibilidad%20Ejemplos%20mal_files/flecha-der.gif"
-            alt="Flecha roja que apunta a la derecha"
-        /></a>
-      </p>
-
-      <p>
-        Menu:
-        <br />
-        <br />
-        <a target="_self" href="unete.html"
-          ><img
-            src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
-            alt="Únete"
-          />Únete</a
-        >
-        <br />
-        <a target="_self" href="equipo.html"
-          ><img
-            src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
-            alt="Equipo"
-          />Equipo</a
-        >
-        <br />
-        <a target="_self" href="contacto.html"
-          ><img
-            src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
-            alt="Contacto"
-          />Contacto</a
-        >
-        <br />
-        <a target="_self" href="siguenos.html"
-          ><img
-            src="Accesibilidad%20Ejemplos%20mal_files/logo.png"
-            alt="Síguenos"
-          />Síguenos</a
-        >
-      </p>
-
-      <p>
-        Teléfono de contacto:<img
-          src="Accesibilidad%20Ejemplos%20mal_files/telefono.gif"
-          alt="Teléfono de contacto"
-        />
-      </p>
-    </section>
-    <section class="bordes">
-      <h2>Mapas de imágenes - Ejemplo mal</h2>
-
-      <img
-        class="imagenes"
-        src="Accesibilidad%20Ejemplos%20mal_files/img-map-area.png"
-        usemap="#map1"
-        border="0"
-        alt="Imagen de Presentación Hackathon Lovers"
-      />
-
-      <map name="map1">
-        <area
-          shape="rect"
-          coords="18,25,221,63"
-          href="index.html"
-          alt="index section"
-          target="_self"
-        />
-        <area
-          shape="rect"
-          coords="337,40,396,64"
-          href="unete.html"
-          alt="unete section"
-          target="_self"
-        />
-        <area
-          shape="rect"
-          coords="424,40,491,65"
-          href="equipo.html"
-          alt="equipo section"
-          target="_self"
-        />
-        <area
-          shape="rect"
-          coords="520,41,612,64"
-          href="contacto.html"
-          alt="contacto section"
-          target="_self"
-        />
-        <area
-          shape="rect"
-          coords="641,40,728,65"
-          href="siguenos.html"
-          alt="siguenos section"
-          target="_self"
-        />
-        <area
-          shape="rect"
-          coords="16,344,400,397"
-          href="meetup.html"
-          alt="meetup section"
-          target="_self"
-        />
-      </map>
-
-      <hr />
-
-      <h2>Enlace - Ejemplo mal</h2>
-
-      <h3>A mi hija mayor se le ha caido su primer diente</h3>
-
-      <p>
-        Estabamos desayunando cuando de repente sucedió.
-        <a target="_self" href="#">Más información.</a>
-      </p>
-
-      <h3>A mi hija pequeña le ha salido su primera muela</h3>
-
-      <p>
-        Después de comer, la pequeña dijo que le molestaba la boca.
-        <a target="_self" href="#">Más información.</a>
-      </p>
-
-      <hr />
-
-      <h2>Organización - Ejemplo mal</h2>
-
-      <big><strong>Nombre de la empresa</strong></big>
-      <p>Eslogan de la empresa</p>
-      <h3>Noticias</h3>
-      <h4>Noticia 1</h4>
-      <small>Desarrollo de la noticia 1</small>
-      <h4>Noticia 2</h4>
-      <small>Desarrollo de la noticia 2</small>
-
-      <hr />
-
-      <h2>Diagramas - Ejemplo mal</h2>
-
-      <img
-        class="diagrama"
-        src="Accesibilidad%20Ejemplos%20mal_files/disenio-centrado-usuario.png"
-        alt="Diagrama de Diseño Centrado en el Usuario"
-      />
-    </section>
-    <section class="bordes">
-      <h2>Tablas - Ejemplo mal</h2>
-
-      <table border="1">
-        <caption>
-          En esta tabla puede verse el horario de la clase 3ºA
-        </caption>
-        <thead>
-          <tr>
-            <th id="hora" scope="col"><strong>Hora</strong></th>
-            <th id="lunes" scope="col"><strong>Lunes</strong></th>
-            <th id="martes" scope="col"><strong>Martes</strong></th>
-            <th id="miercoles" scope="col"><strong>Miércoles</strong></th>
-            <th id="jueves" scope="col"><strong>Jueves</strong></th>
-            <th id="viernes" scope="col"><strong>Viernes</strong></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td headers="hora" scope="row"><strong>10:00</strong></td>
-            <td headers="lunes">Matemáticas</td>
-            <td headers="martes">Matemáticas</td>
-            <td headers="miercoles">Matemáticas</td>
-            <td headers="jueves">Matemáticas</td>
-            <td headers="viernes">Matemáticas</td>
-          </tr>
-          <tr>
-            <td headers="hora" scope="row"><strong>11:00</strong></td>
-            <td headers="lunes">Lengua</td>
-            <td headers="martes">Lengua</td>
-            <td headers="miercoles">Lengua</td>
-            <td headers="jueves">Lengua</td>
-            <td headers="viernes">Lengua</td>
-          </tr>
-          <tr>
-            <td headers="hora" scope="row"><strong>12:00</strong></td>
-            <td headers="lunes">C. Sociales</td>
-            <td headers="martes">C. Naturales</td>
-            <td headers="miercoles">C. Sociales</td>
-            <td headers="jueves">C. Naturales</td>
-            <td headers="viernes">Deporte</td>
-          </tr>
-          <tr>
-            <td headers="hora" scope="row"><strong>13:00</strong></td>
-            <td headers="lunes">Inglés</td>
-            <td headers="martes">Inglés</td>
-            <td headers="miercoles">Inglés</td>
-            <td headers="jueves">Inglés</td>
-            <td headers="viernes">Música</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <hr />
-
-      <h2>Contraste - Ejemplo Mal</h2>
-
-      <div class="importante">Este texto es importante</div>
-    </section>
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="recetas.html">Recetas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: info@ejemplo.com</p>
+          <p>Teléfono: +34 123 456 789</p>
+          <p>Dirección: Calle Ejemplo 123, Ourense, España</p>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
